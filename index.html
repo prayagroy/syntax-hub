@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Syntax Hub | Computer Science Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function sendWhatsAppMessage() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  var phoneNumber = "916289575651"; // WhatsApp number with country code
+
+  var whatsappMessage =
+    "Hello Syntax Hub,%0A%0A" +
+    "Name: " + name + "%0A" +
+    "Email: " + email + "%0A" +
+    "Message: " + message;
+
+  var whatsappURL =
+    "https://wa.me/" + phoneNumber + "?text=" + whatsappMessage;
+
+  window.open(whatsappURL, "_blank");
+}
+</script>
+
+<body>
+
+<!-- HEADER / HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      <span class="yellow">Syntax</span>
+      <span class="blue">Hub</span>
+    </h1>
+    <p>
+      Computer Science Coaching for Classes 9–12 (CBSE & ICSE)<br>
+      Professional Python Courses for Working Professionals
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#courses" class="btn primary">Explore Courses</a>
+      <a href="#contact" class="btn outline">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="section">
+  <h2>Our Courses</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Classes 9–12</h3>
+      <p>CBSE & ICSE Computer Science with strong fundamentals.</p>
+    </div>
+    <div class="card">
+      <h3>Python for Data Analytics</h3>
+      <p>Python, NumPy, Pandas, Excel & real-world projects.</p>
+    </div>
+    <div class="card">
+      <h3>Professional Python</h3>
+      <p>Job-oriented Python training for working professionals.</p>
+    </div>
+  </div>
+</section>
+<!-- LEARNING ENVIRONMENT -->
+<section class="section environment">
+  <h2>Our Learning Environment</h2>
+
+  <div class="env-container">
+    <div class="env-text">
+      <h3>Real Classroom. Real Coding.</h3>
+      <p>
+        At Syntax Hub, students learn in a focused, technology-driven
+        classroom environment. We emphasize hands-on coding, live problem
+        solving, and interactive teaching to build strong computer science
+        foundations.
+      </p>
+    </div>
+
+    <div class="env-image">
+      <img src="Gemini_Generated_Image_58uaqa58uaqa58ua.png" alt="Syntax Hub Classroom">
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="section dark">
+  <h2>Why Choose Syntax Hub?</h2>
+  <div class="cards">
+    <div class="card hover">
+      <h3>Expert Faculty</h3>
+      <p>Experienced teachers with industry exposure.</p>
+    </div>
+    <div class="card hover">
+      <h3>Practical Learning</h3>
+      <p>Hands-on coding, projects & real examples.</p>
+    </div>
+    <div class="card hover">
+      <h3>Small Batches</h3>
+      <p>Personal attention for every student.</p>
+    </div>
+    <div class="card hover">
+      <h3>Career Focused</h3>
+      <p>Skills that help in exams & real careers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact-box">
+    <div class="contact-info">
+  <p><strong>Syntax Hub</strong></p>
+  <p>📞 +91 6289575651</p>
+  <p>📧 syntaxhub@gmail.com</p>
+  <p>📍 India</p>
+</div>
+
+    <form class="contact-form" onsubmit="sendWhatsAppMessage(); return false;">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    © 2026 Syntax Hub | Learn • Code • Succeed <br>
+    📞 +91 6289575651 | 📧 syntaxhub@gmail.com
+  </p>
+</footer>
+
